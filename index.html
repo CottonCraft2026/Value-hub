@@ -1,0 +1,384 @@
+<!DOCTYPE html>
+<html class="light" lang="en">
+<head>
+    <meta charset="utf-8"/>
+    <meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+    <title>Value Hub | Home</title>
+    <link rel="icon" type="image/svg+xml" href="value_hub_cart_lineart_transparent.svg">
+    <!-- Fonts -->
+        <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Manrope:wght@200..800&display=swap" rel="stylesheet"/>
+    <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+    <!-- Tailwind CSS CDN -->
+    <script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+    <script id="tailwind-config">
+        tailwind.config = {
+            darkMode: "class",
+            theme: {
+                extend: {
+                    "colors": {
+                        "on-tertiary-container": "#629258",
+                        "secondary-fixed": "#ffdea1",
+                        "surface-container-lowest": "#ffffff",
+                        "on-primary-fixed-variant": "#394763",
+                        "on-background": "#1a1c1a",
+                        "secondary-fixed-dim": "#f1bf53",
+                        "background": "#faf9f6",
+                        "tertiary-fixed-dim": "#a1d494",
+                        "surface-container-low": "#f4f3f1",
+                        "on-tertiary": "#ffffff",
+                        "secondary": "#795900",
+                        "inverse-primary": "#b8c6e8",
+                        "surface-container-high": "#e9e8e5",
+                        "on-error": "#ffffff",
+                        "on-primary-container": "#7886a5",
+                        "on-secondary-container": "#745500",
+                        "surface-dim": "#dbdad7",
+                        "primary-fixed-dim": "#b8c6e8",
+                        "on-error-container": "#93000a",
+                        "on-surface-variant": "#44474d",
+                        "surface": "#faf9f6",
+                        "surface-tint": "#505e7c",
+                        "on-secondary-fixed-variant": "#5c4300",
+                        "on-secondary-fixed": "#261900",
+                        "surface-container-highest": "#e3e2e0",
+                        "on-secondary": "#ffffff",
+                        "tertiary-container": "#002501",
+                        "error-container": "#ffdad6",
+                        "on-primary-fixed": "#0c1b35",
+                        "error": "#ba1a1a",
+                        "on-surface": "#1a1c1a",
+                        "tertiary-fixed": "#bcf0ae",
+                        "primary": "#000514",
+                        "inverse-on-surface": "#f2f1ee",
+                        "outline-variant": "#c5c6ce",
+                        "inverse-surface": "#2f312f",
+                        "secondary-container": "#fdca5d",
+                        "on-tertiary-fixed": "#002201",
+                        "on-primary": "#ffffff",
+                        "tertiary": "#000700",
+                        "outline": "#75777e",
+                        "primary-fixed": "#d7e2ff",
+                        "surface-bright": "#faf9f6",
+                        "surface-container": "#efeeeb",
+                        "surface-variant": "#e3e2e0",
+                        "on-tertiary-fixed-variant": "#23501e",
+                        "primary-container": "#0f1e38"
+                    },
+                    "borderRadius": {
+                        "DEFAULT": "0.125rem",
+                        "lg": "0.25rem",
+                        "xl": "0.5rem",
+                        "full": "0.75rem"
+                    },
+                    "fontFamily": {
+                        "headline": ["Bebas Neue", "sans-serif"],
+                        "body": ["Manrope"],
+                        "label": ["Manrope"]
+                    }
+                },
+            },
+        }
+    </script>
+    <style>
+        .material-symbols-outlined {
+            font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 24;
+        }
+        body { font-family: 'Manrope', sans-serif; }
+        h1, h2, h3, .font-headline { font-family: 'Bebas Neue', sans-serif; }
+
+        /* Smooth Scrolling */
+        html { scroll-behavior: smooth; }
+
+        /* Custom Scrollbar */
+        ::-webkit-scrollbar { width: 8px; }
+        ::-webkit-scrollbar-track { background: #f4f3f1; }
+        ::-webkit-scrollbar-thumb { background: #c5c6ce; border-radius: 10px; }
+        ::-webkit-scrollbar-thumb:hover { background: #75777e; }
+    </style>
+</head>
+<body class="bg-surface text-on-surface selection:bg-secondary-container selection:text-on-secondary-container">
+
+<!-- TopNavBar -->
+<nav class="fixed top-0 left-0 w-full z-50 flex justify-between items-center px-8 py-4 max-w-full bg-[#FAF9F6]/90 backdrop-blur-md transition-all duration-300 border-b border-black/5 shadow-[0_4px_30px_rgba(0,0,0,0.03)]" id="main-nav">
+    <a href="index.html" class="flex items-center">
+        <img src="value_hub_wordmark_v3_cart.svg" alt="Value Hub Logo" class="h-8 w-auto">
+    </a>
+    <div class="hidden md:flex items-center space-x-8">
+        <a class="text-[#795900] dark:text-[#FDCA5D] font-bold border-b-2 border-[#795900] pb-1 transition-all duration-300 active:scale-95" href="index.html">Home</a>
+        <a class="text-[#000514] dark:text-[#FAF9F6] opacity-80 hover:text-[#795900] transition-all duration-300 font-bold active:scale-95" href="shop.html">Shop</a>
+        <a class="text-[#000514] dark:text-[#FAF9F6] opacity-80 hover:text-[#795900] transition-all duration-300 font-bold active:scale-95" href="locations.html">Locations</a>
+        <a class="text-[#000514] dark:text-[#FAF9F6] opacity-80 hover:text-[#795900] transition-all duration-300 font-bold active:scale-95" href="cafe.html">Cafe</a>
+        <a class="text-[#000514] dark:text-[#FAF9F6] opacity-80 hover:text-[#795900] transition-all duration-300 font-bold active:scale-95" href="about.html">About</a>
+        <a class="text-[#000514] dark:text-[#FAF9F6] opacity-80 hover:text-[#795900] transition-all duration-300 font-bold active:scale-95" href="careers.html">Careers</a>
+        <a class="text-[#000514] dark:text-[#FAF9F6] opacity-80 hover:text-[#795900] transition-all duration-300 font-bold active:scale-95" href="contact.html">Contact Us</a>
+    </div>
+    <div class="flex items-center space-x-5">
+        <div class="hidden sm:flex items-center space-x-5 mr-4">
+            <a href="#" class="text-[#000514] dark:text-[#FAF9F6] opacity-60 hover:opacity-100 transition-opacity" title="Instagram">
+                <svg class="w-5 h-5" fill="currentColor" viewBox="0 0 24 24"><path d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zm0-2.163c-3.259 0-3.667.014-4.947.072-4.358.2-6.78 2.618-6.98 6.98-.059 1.281-.073 1.689-.073 4.948 0 3.259.014 3.668.072 4.947.2 4.358 2.618 6.78 6.98 6.98 1.281.058 1.689.072 4.948.072 3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98-1.281-.059-1.69-.073-4.949-.073zm0 5.838c-3.403 0-6.162 2.759-6.162 6.162s2.759 6.163 6.162 6.163 6.162-2.759 6.162-6.163c0-3.403-2.759-6.162-6.162-6.162zm0 10.162c-2.209 0-4-1.79-4-4 0-2.209 1.791-4 4-4s4 1.791 4 4c0 2.21-1.791 4-4 4zm6.406-11.845c-.796 0-1.441.645-1.441 1.44s.645 1.44 1.441 1.44c.795 0 1.439-.645 1.439-1.44s-.644-1.44-1.439-1.44z"/></svg>
+            </a>
+            <a href="#" class="text-[#000514] dark:text-[#FAF9F6] opacity-60 hover:opacity-100 transition-opacity" title="Twitter">
+                <svg class="w-5 h-5" fill="currentColor" viewBox="0 0 24 24"><path d="M18.244 2.25h3.308l-7.227 8.26 8.502 11.24H16.17l-5.214-6.817L4.99 21.75H1.68l7.73-8.835L1.254 2.25H8.08l4.713 6.231zm-1.161 17.52h1.833L7.084 4.126H5.117z"/></svg>
+            </a>
+            <a href="#" class="text-[#000514] dark:text-[#FAF9F6] opacity-60 hover:opacity-100 transition-opacity" title="LinkedIn">
+                <svg class="w-5 h-5" fill="currentColor" viewBox="0 0 24 24"><path d="M19 0h-14c-2.761 0-5 2.239-5 5v14c0 2.761 2.239 5 5 5h14c2.762 0 5-2.239 5-5v-14c0-2.761-2.238-5-5-5zm-11 19h-3v-11h3v11zm-1.5-12.268c-.966 0-1.75-.79-1.75-1.764s.784-1.764 1.75-1.764 1.75.79 1.75 1.764-.783 1.764-1.75 1.764zm13.5 12.268h-3v-5.604c0-3.368-4-3.113-4 0v5.604h-3v-11h3v1.765c1.396-2.586 7-2.777 7 2.476v6.759z"/></svg>
+            </a>
+        </div>
+        <!-- Mobile Menu Toggle -->
+        <button class="md:hidden flex items-center text-[#000514]" id="menu-toggle">
+            <span class="material-symbols-outlined">menu</span>
+        </button>
+    </div>
+</nav>
+
+<!-- Mobile Menu (Hidden by default) -->
+<div class="fixed inset-0 bg-white z-[60] flex flex-col items-center justify-center space-y-8 text-2xl font-headline hidden" id="mobile-menu">
+    <button class="absolute top-6 right-8" id="menu-close">
+        <span class="material-symbols-outlined text-4xl">close</span>
+    </button>
+    <a href="index.html" class="hover:text-secondary transition-colors">Home</a>
+    <a href="shop.html" class="hover:text-secondary transition-colors">Shop</a>
+    <a href="locations.html" class="hover:text-secondary transition-colors">Locations</a>
+    <a href="cafe.html" class="hover:text-secondary transition-colors">Cafe</a>
+    <a href="about.html" class="hover:text-secondary transition-colors">About</a>
+    <a href="careers.html" class="hover:text-secondary transition-colors">Careers</a>
+    <a href="contact.html" class="hover:text-secondary transition-colors">Contact Us</a>
+    <a href="join.html" class="bg-secondary text-white px-8 py-3 rounded-full text-lg font-body">Join the Hub</a>
+</div>
+
+<main>
+    <!-- Hero Section -->
+    <header class="relative w-full min-h-screen flex flex-col md:flex-row overflow-hidden">
+        <!-- Text Section (1/3) -->
+        <div class="w-full md:w-1/3 flex flex-col justify-center items-start px-8 md:px-16 py-32 md:py-20 bg-surface z-10">
+            <h1 class="text-[60px] font-headline font-bold leading-none text-primary">
+                The Soil's Quiet <br/> <span class="italic text-secondary">Revolution.</span>
+            </h1>
+            <div class="pt-12">
+                <a href="shop.html" class="bg-primary text-white px-10 py-5 rounded-full font-bold font-body text-lg hover:scale-105 active:scale-95 transition-all shadow-xl inline-block">
+                    Explore the Harvest
+                </a>
+            </div>
+        </div>
+
+        <!-- Image Section (2/3) -->
+        <div class="w-full md:w-2/3 h-64 md:h-auto relative">
+            <img class="w-full h-full object-cover" data-alt="a scenic view of a lush green organic vegetable farm at sunrise with golden light and misty atmosphere" src="v2 image/24.png"/>
+            <!-- Gradient Overlay to blend with text section -->
+            <div class="absolute inset-0 bg-gradient-to-r from-surface to-transparent hidden md:block w-32"></div>
+            <!-- Bottom Fade for mobile -->
+            <div class="absolute inset-0 bg-gradient-to-t from-surface via-transparent to-transparent md:hidden"></div>
+        </div>
+
+        <!-- Scroll Indicator -->
+        <div class="absolute bottom-10 left-8 md:left-1/2 -translate-x-0 md:-translate-x-1/2 animate-bounce z-20">
+            <span class="material-symbols-outlined text-primary/30 text-3xl">expand_more</span>
+        </div>
+    </header>
+
+    <!-- Values Section 01: Regenerative Roots -->
+    <section class="flex flex-col md:flex-row-reverse min-h-[600px] overflow-hidden border-b border-outline/5">
+        <!-- Text (1/3) -->
+        <div class="w-full md:w-1/3 p-12 md:p-20 flex flex-col justify-center bg-surface-container-low">
+            <span class="text-secondary font-bold text-xs uppercase tracking-widest mb-4">Our Mission</span>
+            <h2 class="text-4xl md:text-6xl font-headline font-bold text-primary mb-6">Regenerative Roots</h2>
+            <p class="text-lg text-on-surface-variant font-body leading-relaxed mb-8">
+                We don't just farm; we restore. Every product supports a system that cleans the water, builds the soil, and sequesters carbon. It's about giving back more than we take.
+            </p>
+            <a href="about.html" class="inline-flex items-center text-primary font-bold hover:gap-3 transition-all">
+                Learn about our methods <span class="material-symbols-outlined ml-2">arrow_forward</span>
+            </a>
+        </div>
+        <!-- Image (2/3) -->
+        <div class="w-full md:w-2/3 h-80 md:h-auto relative">
+            <img class="w-full h-full object-cover" data-alt="close up of rich dark organic soil with a small green seedling emerging, warm lighting" src="v2 image/06.png"/>
+            <div class="absolute inset-0 bg-black/10"></div>
+        </div>
+    </section>
+
+    <!-- Values Section 02: Community Hub -->
+    <section class="flex flex-col md:flex-row min-h-[600px] overflow-hidden">
+        <!-- Text (1/3) -->
+        <div class="w-full md:w-1/3 p-12 md:p-20 flex flex-col justify-center bg-surface">
+            <span class="text-secondary font-bold text-xs uppercase tracking-widest mb-4">The Collective</span>
+            <h2 class="text-4xl md:text-6xl font-headline font-bold text-primary mb-6">The Hub Community</h2>
+            <p class="text-lg text-on-surface-variant font-body leading-relaxed mb-8">
+                Linking 200+ local independent farmers directly to your neighborhood. No middlemen, just authentic community growth and shared prosperity for our local growers.
+            </p>
+            <div class="grid grid-cols-2 gap-8 border-t border-outline/10 pt-8">
+                <div>
+                    <h4 class="text-2xl font-headline font-bold text-secondary">200+</h4>
+                    <p class="text-[10px] uppercase tracking-widest opacity-60">Local Farmers</p>
+                </div>
+                <div>
+                    <h4 class="text-2xl font-headline font-bold text-secondary">100%</h4>
+                    <p class="text-[10px] uppercase tracking-widest opacity-60">Traceable</p>
+                </div>
+            </div>
+        </div>
+        <!-- Image (2/3) -->
+        <div class="w-full md:w-2/3 h-80 md:h-auto relative">
+            <img class="w-full h-full object-cover" data-alt="vibrant farmers market stall with fresh vegetables" src="v2 image/07.png edited.png"/>
+            <!-- Overlay Info -->
+            <div class="absolute bottom-12 right-12 bg-white/90 backdrop-blur p-6 rounded-2xl shadow-2xl max-w-xs md:block hidden">
+                <p class="italic text-primary font-body text-sm">"Our goal is to create a digital-first sanctuary for soil sovereignty."</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Experience Section: The Harvest Kitchen -->
+    <section class="flex flex-col md:flex-row-reverse min-h-[600px] overflow-hidden bg-primary-container text-on-primary-container">
+        <!-- Text (1/3) -->
+        <div class="w-full md:w-1/3 p-12 md:p-20 flex flex-col justify-center">
+            <span class="text-secondary-fixed font-bold text-xs uppercase tracking-widest mb-4">Our Experience</span>
+            <h2 class="text-4xl md:text-6xl font-headline font-bold mb-6 italic">Beyond the Greenhouse</h2>
+            <p class="text-lg opacity-80 font-body leading-relaxed mb-8">
+                Value Hub isn't just a marketplace; it's a sanctuary for conscious consumption. Our spaces are built with biophilic design to lower your cortisol while you discover your next seasonal staple.
+            </p>
+            <div class="space-y-4 mb-8">
+                <div class="flex items-center gap-4">
+                    <span class="material-symbols-outlined text-secondary-fixed">local_cafe</span>
+                    <span class="font-body text-sm font-bold uppercase tracking-wider">Zero-Waste Juice Bar</span>
+                </div>
+                <div class="flex items-center gap-4">
+                    <span class="material-symbols-outlined text-secondary-fixed">spa</span>
+                    <span class="font-body text-sm font-bold uppercase tracking-wider">Artisan Apothecary</span>
+                </div>
+            </div>
+            <a href="locations.html" class="inline-flex items-center font-bold hover:gap-3 transition-all">
+                View our locations <span class="material-symbols-outlined ml-2">arrow_forward</span>
+            </a>
+        </div>
+        <!-- Image (2/3) -->
+        <div class="w-full md:w-2/3 h-80 md:h-auto relative">
+            <img class="w-full h-full object-cover" data-alt="a minimalist juice bar with white marble counters" src="v2 image/03.png"/>
+        </div>
+    </section>
+
+    <!-- Join Section: The Membership -->
+    <section class="flex flex-col md:flex-row min-h-[500px] overflow-hidden bg-secondary-container text-on-secondary-container">
+        <!-- Text (1/3) -->
+        <div class="w-full md:w-1/3 p-12 md:p-20 flex flex-col justify-center">
+            <h2 class="text-4xl md:text-6xl font-headline font-bold mb-6">Join the Collective</h2>
+            <p class="text-lg opacity-90 font-body leading-relaxed mb-8">
+                Unlock 10% off the entire hub, priority access to seasonal harvests, and monthly curated artisan gift boxes.
+            </p>
+            <button class="bg-primary text-on-primary px-10 py-5 rounded-full font-bold font-body text-lg self-start hover:scale-105 transition-all shadow-2xl" onclick="location.href='join.html'">
+                Become a Partner
+            </button>
+        </div>
+        <!-- Content (2/3) - Stats & Info -->
+        <div class="w-full md:w-2/3 p-8 md:p-20 flex items-center bg-white/5">
+            <div class="grid grid-cols-1 sm:grid-cols-2 gap-12 w-full font-body">
+                <div class="p-8 rounded-3xl bg-white/10 backdrop-blur-sm border border-white/10">
+                    <h4 class="text-4xl font-headline font-bold mb-2">5K+</h4>
+                    <p class="text-sm uppercase tracking-widest font-bold opacity-60">Active Members</p>
+                    <p class="text-sm mt-4 opacity-70">A growing community of conscious consumers focused on health and soil sovereignty.</p>
+                </div>
+                <div class="p-8 rounded-3xl bg-white/10 backdrop-blur-sm border border-white/10">
+                    <h4 class="text-4xl font-headline font-bold mb-2">200+</h4>
+                    <p class="text-sm uppercase tracking-widest font-bold opacity-60">Local Farms</p>
+                    <p class="text-sm mt-4 opacity-70">Direct partnerships with independent growers ensuring fair pay and fresh produce.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+</main>
+
+<footer class="w-full py-20 px-12 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-5 gap-16 bg-[#0F1E38] dark:bg-[#000700] text-white">
+    <div class="space-y-8">
+        <div class="text-3xl font-headline text-[#FDCA5D] font-bold">Value Hub</div>
+        <p class="opacity-70 font-body text-sm leading-relaxed max-w-xs">
+            A digital-first sanctuary for soil sovereignty and authentic nutrition. Grown with care, delivered with intention.
+        </p>
+    </div>
+    
+    <div class="space-y-8">
+        <h5 class="text-xl font-headline font-bold text-[#FDCA5D]">Quick Links</h5>
+        <ul class="flex flex-col space-y-4 text-sm opacity-80 font-body">
+            <li><a class="hover:text-[#FDCA5D] transition-all" href="shop.html">The Marketplace</a></li>
+            <li><a class="hover:text-[#FDCA5D] transition-all" href="cafe.html">Botanical Cafe</a></li>
+            <li><a class="hover:text-[#FDCA5D] transition-all" href="locations.html">Our Locations</a></li>
+            <li><a class="hover:text-[#FDCA5D] transition-all" href="about.html">Methods & Values</a></li>
+            <li><a class="hover:text-[#FDCA5D] transition-all" href="careers.html">Careers</a></li>
+        </ul>
+    </div>
+
+    <div class="space-y-8">
+        <h5 class="text-xl font-headline font-bold text-[#FDCA5D]">Our Hubs</h5>
+        <ul class="flex flex-col space-y-4 text-sm opacity-80 font-body">
+            <li>
+                <p class="font-bold text-[#FDCA5D]">Australia</p>
+                <p class="text-xs opacity-70">22 Tikalara Street,<br/>Regency Park SA</p>
+            </li>
+            <li>
+                <p class="font-bold text-[#FDCA5D]">Canada</p>
+                <p class="text-xs opacity-70">3920 68 Avenue SE,<br/>Calgary, AB</p>
+            </li>
+        </ul>
+    </div>
+
+    <div class="space-y-8">
+        <h5 class="text-xl font-headline font-bold text-[#FDCA5D]">Support</h5>
+        <ul class="flex flex-col space-y-4 text-sm opacity-80 font-body">
+            <li><a class="hover:text-[#FDCA5D] transition-all" href="#">Privacy Policy</a></li>
+            <li><a class="hover:text-[#FDCA5D] transition-all" href="#">Terms & Conditions</a></li>
+            <li><a class="hover:text-[#FDCA5D] transition-all" href="contact.html">Contact Concierge</a></li>
+        </ul>
+    </div>
+
+    <div class="space-y-8">
+        <h5 class="text-xl font-headline font-bold text-[#FDCA5D]">Newsletter</h5>
+        <div class="flex flex-col gap-4">
+            <p class="text-sm opacity-70">Weekly insights into regenerative living.</p>
+            <div class="flex gap-2">
+                <input class="bg-white/10 border-none rounded-lg px-4 py-3 text-sm flex-1 outline-none focus:ring-1 focus:ring-[#FDCA5D]" placeholder="Email" type="email"/>
+                <button class="bg-[#FDCA5D] text-[#0F1E38] px-4 py-3 rounded-lg font-bold hover:brightness-110 active:scale-95 transition-all text-xs">Go</button>
+            </div>
+        </div>
+    </div>
+
+    <div class="lg:col-span-5 pt-12 border-t border-white/10 flex flex-col md:flex-row justify-between items-center gap-6 text-[10px] tracking-widest uppercase opacity-40 font-body">
+        <p>© <span id="year"></span> Value Hub. all right received</p>
+        <div class="flex gap-8">
+            <a href="#" class="hover:text-white transition-colors">Instagram</a>
+            <a href="#" class="hover:text-white transition-colors">Twitter</a>
+            <a href="#" class="hover:text-white transition-colors">LinkedIn</a>
+        </div>
+    </div>
+</footer>
+
+<script>
+    // Navigation Scroll Effect
+    const nav = document.getElementById('main-nav');
+    window.addEventListener('scroll', () => {
+        if (window.scrollY > 50) {
+            nav.classList.add('bg-white', 'shadow-md', 'py-3');
+            nav.classList.remove('bg-[#FAF9F6]/80', 'py-4', 'backdrop-blur-md');
+        } else {
+            nav.classList.remove('bg-white', 'shadow-md', 'py-3');
+            nav.classList.add('bg-[#FAF9F6]/80', 'py-4', 'backdrop-blur-md');
+        }
+    });
+
+    // Mobile Menu Toggle
+    const menuToggle = document.getElementById('menu-toggle');
+    const menuClose = document.getElementById('menu-close');
+    const mobileMenu = document.getElementById('mobile-menu');
+
+    menuToggle.addEventListener('click', () => {
+        mobileMenu.classList.remove('hidden');
+        document.body.style.overflow = 'hidden';
+    });
+
+    menuClose.addEventListener('click', () => {
+        mobileMenu.classList.add('hidden');
+        document.body.style.overflow = 'auto';
+    });
+
+    // Dynamic Year
+    document.getElementById('year').textContent = new Date().getFullYear();
+</script>
+
+</body>
+</html>

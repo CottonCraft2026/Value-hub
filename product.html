@@ -1,0 +1,406 @@
+<!DOCTYPE html>
+<html class="light" lang="en">
+<head>
+    <meta charset="utf-8"/>
+    <meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+    <title>Value Hub | Organic Hass Avocado</title>
+    <link rel="icon" type="image/svg+xml" href="value_hub_cart_lineart_transparent.svg">
+    <!-- Fonts -->
+        <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Manrope:wght@200..800&display=swap" rel="stylesheet"/>
+    <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+    <!-- Tailwind CSS CDN -->
+    <script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+    <script id="tailwind-config">
+        tailwind.config = {
+            darkMode: "class",
+            theme: {
+                extend: {
+                    "colors": {
+                        "on-tertiary-container": "#629258",
+                        "secondary-fixed": "#ffdea1",
+                        "surface-container-lowest": "#ffffff",
+                        "on-primary-fixed-variant": "#394763",
+                        "on-background": "#1a1c1a",
+                        "secondary-fixed-dim": "#f1bf53",
+                        "background": "#faf9f6",
+                        "tertiary-fixed-dim": "#a1d494",
+                        "surface-container-low": "#f4f3f1",
+                        "on-tertiary": "#ffffff",
+                        "secondary": "#795900",
+                        "inverse-primary": "#b8c6e8",
+                        "surface-container-high": "#e9e8e5",
+                        "on-error": "#ffffff",
+                        "on-primary-container": "#7886a5",
+                        "on-secondary-container": "#745500",
+                        "surface-dim": "#dbdad7",
+                        "primary-fixed-dim": "#b8c6e8",
+                        "on-error-container": "#93000a",
+                        "on-surface-variant": "#44474d",
+                        "surface": "#faf9f6",
+                        "surface-tint": "#505e7c",
+                        "on-secondary-fixed-variant": "#5c4300",
+                        "on-secondary-fixed": "#261900",
+                        "surface-container-highest": "#e3e2e0",
+                        "on-secondary": "#ffffff",
+                        "tertiary-container": "#002501",
+                        "error-container": "#ffdad6",
+                        "on-primary-fixed": "#0c1b35",
+                        "error": "#ba1a1a",
+                        "on-surface": "#1a1c1a",
+                        "tertiary-fixed": "#bcf0ae",
+                        "primary": "#000514",
+                        "inverse-on-surface": "#f2f1ee",
+                        "outline-variant": "#c5c6ce",
+                        "inverse-surface": "#2f312f",
+                        "secondary-container": "#fdca5d",
+                        "on-tertiary-fixed": "#002201",
+                        "on-primary": "#ffffff",
+                        "tertiary": "#000700",
+                        "outline": "#75777e",
+                        "primary-fixed": "#d7e2ff",
+                        "surface-bright": "#faf9f6",
+                        "surface-container": "#efeeeb",
+                        "surface-variant": "#e3e2e0",
+                        "on-tertiary-fixed-variant": "#23501e",
+                        "primary-container": "#0f1e38"
+                    },
+                    "borderRadius": {
+                        "DEFAULT": "0.125rem",
+                        "lg": "0.25rem",
+                        "xl": "0.5rem",
+                        "full": "0.75rem"
+                    },
+                    "fontFamily": {
+                        "headline": ["Bebas Neue", "sans-serif"],
+                        "body": ["Manrope"],
+                        "label": ["Manrope"]
+                    }
+                },
+            },
+        }
+    </script>
+    <style>
+        .material-symbols-outlined {
+            font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 24;
+        }
+        body { font-family: 'Manrope', sans-serif; background-color: #FAF9F6; }
+        .font-headline, h1, h2, h3 { font-family: 'Bebas Neue', sans-serif; }
+        html { scroll-behavior: smooth; }
+    </style>
+</head>
+<body class="text-primary selection:bg-secondary-container">
+
+<!-- TopNavBar -->
+<nav class="fixed top-0 left-0 w-full z-50 flex justify-between items-center px-8 py-4 max-w-full bg-[#FAF9F6]/90 backdrop-blur-md transition-all duration-300 border-b border-black/5 shadow-[0_4px_30px_rgba(0,0,0,0.03)]" id="main-nav">
+    <div class="flex items-center gap-8">
+        <a href="index.html" class="flex items-center">
+        <img src="value_hub_wordmark_v3_cart.svg" alt="Value Hub Logo" class="h-8 w-auto">
+    </a>
+        <div class="hidden md:flex gap-6">
+            <a class="text-[#000514] dark:text-[#FAF9F6] opacity-80 hover:text-[#795900] transition-colors duration-300" href="index.html">Home</a>
+            <a class="text-[#795900] dark:text-[#FDCA5D] font-bold border-b-2 border-[#795900] pb-1 hover:text-[#795900] transition-colors duration-300" href="shop.html">Shop</a>
+            <a class="text-[#000514] dark:text-[#FAF9F6] opacity-80 hover:text-[#795900] transition-colors duration-300" href="locations.html">Locations</a>
+            <a class="text-[#000514] dark:text-[#FAF9F6] opacity-80 hover:text-[#795900] transition-colors duration-300" href="cafe.html">Cafe</a>
+            <a class="text-[#000514] dark:text-[#FAF9F6] opacity-80 hover:text-[#795900] transition-colors duration-300" href="about.html">About</a>
+            <a class="text-[#000514] dark:text-[#FAF9F6] opacity-80 hover:text-[#795900] transition-colors duration-300" href="careers.html">Careers</a>
+            <a class="text-[#000514] dark:text-[#FAF9F6] opacity-80 hover:text-[#795900] transition-colors duration-300" href="contact.html">Contact Us</a>
+        </div>
+    </div>
+    <div class="flex items-center space-x-5">
+        <div class="hidden sm:flex items-center space-x-5 mr-4">
+            <a href="#" class="text-[#000514] dark:text-[#FAF9F6] opacity-60 hover:opacity-100 transition-opacity" title="Instagram">
+                <svg class="w-5 h-5" fill="currentColor" viewBox="0 0 24 24"><path d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zm0-2.163c-3.259 0-3.667.014-4.947.072-4.358.2-6.78 2.618-6.98 6.98-.059 1.281-.073 1.689-.073 4.948 0 3.259.014 3.668.072 4.947.2 4.358 2.618 6.78 6.98 6.98 1.281.058 1.689.072 4.948.072 3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98-1.281-.059-1.69-.073-4.949-.073zm0 5.838c-3.403 0-6.162 2.759-6.162 6.162s2.759 6.163 6.162 6.163 6.162-2.759 6.162-6.163c0-3.403-2.759-6.162-6.162-6.162zm0 10.162c-2.209 0-4-1.79-4-4 0-2.209 1.791-4 4-4s4 1.791 4 4c0 2.21-1.791 4-4 4zm6.406-11.845c-.796 0-1.441.645-1.441 1.44s.645 1.44 1.441 1.44c.795 0 1.439-.645 1.439-1.44s-.644-1.44-1.439-1.44z"/></svg>
+            </a>
+            <a href="#" class="text-[#000514] dark:text-[#FAF9F6] opacity-60 hover:opacity-100 transition-opacity" title="Twitter">
+                <svg class="w-5 h-5" fill="currentColor" viewBox="0 0 24 24"><path d="M18.244 2.25h3.308l-7.227 8.26 8.502 11.24H16.17l-5.214-6.817L4.99 21.75H1.68l7.73-8.835L1.254 2.25H8.08l4.713 6.231zm-1.161 17.52h1.833L7.084 4.126H5.117z"/></svg>
+            </a>
+            <a href="#" class="text-[#000514] dark:text-[#FAF9F6] opacity-60 hover:opacity-100 transition-opacity" title="LinkedIn">
+                <svg class="w-5 h-5" fill="currentColor" viewBox="0 0 24 24"><path d="M19 0h-14c-2.761 0-5 2.239-5 5v14c0 2.761 2.239 5 5 5h14c2.762 0 5-2.239 5-5v-14c0-2.761-2.238-5-5-5zm-11 19h-3v-11h3v11zm-1.5-12.268c-.966 0-1.75-.79-1.75-1.764s.784-1.764 1.75-1.764 1.75.79 1.75 1.764-.783 1.764-1.75 1.764zm13.5 12.268h-3v-5.604c0-3.368-4-3.113-4 0v5.604h-3v-11h3v1.765c1.396-2.586 7-2.777 7 2.476v6.759z"/></svg>
+            </a>
+        </div>
+        <!-- Mobile Menu Toggle -->
+        <button class="md:hidden flex items-center text-[#000514]" id="menu-toggle">
+            <span class="material-symbols-outlined">menu</span>
+        </button>
+    </div>
+</nav>
+
+<!-- Mobile Menu -->
+<div class="fixed inset-0 bg-white z-[60] flex flex-col items-center justify-center space-y-8 text-2xl font-headline hidden" id="mobile-menu">
+    <button class="absolute top-6 right-8" id="menu-close">
+        <span class="material-symbols-outlined text-4xl">close</span>
+    </button>
+    <a href="index.html" class="hover:text-secondary transition-colors">Home</a>
+    <a href="shop.html" class="hover:text-secondary transition-colors">Shop</a>
+    <a href="locations.html" class="hover:text-secondary transition-colors">Locations</a>
+    <a href="cafe.html" class="hover:text-secondary transition-colors">Cafe</a>
+    <a href="about.html" class="hover:text-secondary transition-colors">About</a>
+    <a href="careers.html" class="hover:text-secondary transition-colors">Careers</a>
+    <a href="contact.html" class="hover:text-secondary transition-colors">Contact Us</a>
+    <a href="join.html" class="bg-secondary text-white px-8 py-3 rounded-full text-lg font-body">Join the Hub</a>
+</div>
+
+<main class="pt-32 pb-16 px-4 md:px-8 max-w-7xl mx-auto">
+    <!-- Breadcrumbs -->
+    <div class="mb-8 flex items-center gap-2 text-xs font-label uppercase tracking-widest opacity-50">
+        <a class="hover:text-secondary" href="shop.html">Shop</a>
+        <span class="material-symbols-outlined text-[10px]">chevron_right</span>
+        <a class="hover:text-secondary" href="shop.html">Produce</a>
+        <span class="material-symbols-outlined text-[10px]">chevron_right</span>
+        <span class="text-primary font-bold">Organic Hass Avocado</span>
+    </div>
+
+    <!-- Product Section: Classic Split -->
+    <section class="flex flex-col md:flex-row min-h-[80vh] overflow-hidden mb-24">
+        <!-- Image (2/3) -->
+        <div class="w-full md:w-2/3 flex flex-col gap-4">
+            <div class="aspect-[16/9] rounded-2xl overflow-hidden bg-surface-container">
+                <img class="w-full h-full object-cover" data-alt="close-up of a ripe sliced organic avocado" src="https://lh3.googleusercontent.com/aida-public/AB6AXuA5bscSif7SmvuyKZ9ZHG6EO6AfaaMlXzinZXbRwkULfUy5Qlu5S1kYqI4fotI3UUD4ggKubTH4nJtjBH0v6hCN8ZFkgOvf6jkf27ZWC3LmoBtrRMOAnipJ9-7mChBCcEbv4ONDd4_ZRicw5Asp16bhIG_m2GbJ1EY1_YtWVh3Cv2-HKN8PnnB7oM_OGnwlI3i0kDD1GXl6PVegmF7REOnBjFyi5Lul6ZCEDovWKLpnpS4g8LtXeoJSg_MpUz75QOVv_qCr-MGa3Ic"/>
+            </div>
+            <div class="grid grid-cols-2 gap-4">
+                <div class="aspect-square rounded-2xl overflow-hidden bg-surface-container">
+                    <img class="w-full h-full object-cover" src="https://lh3.googleusercontent.com/aida-public/AB6AXuD9WkBB_3iloaTvNm4u0N5v6zal4IsZHJcYO0ogF049nqFf7hOBpUFJw3H49BVVUAN5UNLAvQvlZc8-aFO6JJ9aRyrnDxIosYrV_BLXIZwvR8csfXStafFzuBxBcnJ3kwGsdhUSjKILgyec7K4_TPu8efXgEF4Df9WQYfW6TdbgdYuC6TsCiHNtRRyAgwcoJ8Hr0erpfakZwHB9-mGmC3Cl7WpiouqXgE7C_mxJZ-6k5jY4SyNELVvxQLTXF8UggMyHMTPupu7caE8"/>
+                </div>
+                <div class="aspect-square rounded-2xl overflow-hidden bg-surface-container">
+                    <img class="w-full h-full object-cover" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDJ-Vjz0u6-Gb-x68ZdCKkApvS1uWNCSRpSj0xNSa0HJeUd7ywxGgTJwhi4Jj1lNipbKxVRJUWNxXjQTCrEnMDGuNmakup0WWkZ4b3Ezxc5dHU052Vf1bJmeLCcCLH2a6f5IZ07kTf-ttjBQfFYQFsU5FZiUteNs4AmhCa2BNqlUz0_8MGyFjzdM56bvZ6l0nNgk2XSqjzBGmwYMoEuKy99pO6Pm5R05pH487dlDpcMsBIXHF-cb4kU_BQXboodtt8wqSfcGRxxK08"/>
+                </div>
+            </div>
+        </div>
+        <!-- Info (1/3) -->
+        <div class="w-full md:w-1/3 p-12 md:p-16 flex flex-col justify-start bg-surface border-l border-outline/10">
+            <div class="flex items-center gap-2 mb-6">
+                <span class="px-3 py-1 bg-tertiary-container text-on-tertiary-container text-[10px] font-bold rounded-full uppercase">Organic</span>
+                <span class="px-3 py-1 bg-surface-container-highest text-primary text-[10px] font-bold rounded-full uppercase">Local</span>
+            </div>
+            <h1 class="text-5xl md:text-6xl font-headline font-bold text-primary mb-4 leading-none">Organic Hass <br/> Avocado</h1>
+            <p class="text-lg text-on-surface-variant font-body mb-8 leading-relaxed">
+                Creamy, nutrient-dense, and harvested at the peak of ripeness from the Ojai Valley groves.
+            </p>
+            <div class="space-y-6 mb-10">
+                <div class="flex justify-between items-baseline border-b border-outline/10 pb-4">
+                    <span class="text-3xl font-headline font-bold text-primary">$2.49 <span class="text-sm font-label text-on-surface-variant">/ each</span></span>
+                    <div class="flex items-center gap-4 bg-surface-container p-1 rounded-lg">
+                        <button class="w-8 h-8 flex items-center justify-center hover:bg-white rounded transition-colors" id="qty-minus">-</button>
+                        <span class="font-bold px-2" id="qty-value">1</span>
+                        <button class="w-8 h-8 flex items-center justify-center hover:bg-white rounded transition-colors" id="qty-plus">+</button>
+                    </div>
+                </div>
+                <button class="w-full py-5 bg-primary text-on-primary rounded-full font-bold font-body text-lg hover:bg-secondary transition-all shadow-xl active:scale-95">
+                    Add to Harvest Basket
+                </button>
+            </div>
+            <!-- Quick Specs -->
+            <div class="grid grid-cols-2 gap-4">
+                <div class="p-4 bg-surface-container-low rounded-xl">
+                    <p class="text-[10px] font-bold uppercase text-secondary mb-1">Food Miles</p>
+                    <p class="text-2xl font-headline font-bold">12 Miles</p>
+                </div>
+                <div class="p-4 bg-surface-container-low rounded-xl">
+                    <p class="text-[10px] font-bold uppercase text-secondary mb-1">Status</p>
+                    <p class="text-2xl font-headline font-bold text-on-tertiary-container">In Season</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Details Section: Classic Split Reverse -->
+    <section class="flex flex-col md:flex-row-reverse min-h-[600px] overflow-hidden bg-surface-container-lowest border-y border-outline/10 mb-24">
+        <!-- Profile (1/3) -->
+        <div class="w-full md:w-1/3 p-12 md:p-20 flex flex-col justify-center border-l border-outline/10">
+            <h2 class="text-4xl md:text-6xl font-headline font-bold text-primary mb-8">Nutrient Profile</h2>
+            <div class="space-y-6">
+                <div class="flex justify-between items-center group">
+                    <span class="text-sm font-bold uppercase tracking-widest text-on-surface-variant">Healthy Fats</span>
+                    <span class="text-2xl font-headline font-bold text-on-tertiary-container">15g</span>
+                </div>
+                <div class="flex justify-between items-center group">
+                    <span class="text-sm font-bold uppercase tracking-widest text-on-surface-variant">Fiber</span>
+                    <span class="text-2xl font-headline font-bold text-on-tertiary-container">7g</span>
+                </div>
+                <div class="flex justify-between items-center group">
+                    <span class="text-sm font-bold uppercase tracking-widest text-on-surface-variant">Vitamin K</span>
+                    <span class="text-2xl font-headline font-bold text-on-tertiary-container">26%</span>
+                </div>
+            </div>
+            <p class="mt-12 text-sm text-on-surface-variant italic font-body">Values based on one medium avocado. Monounsaturated fats prioritized.</p>
+        </div>
+        <!-- Farmer (2/3) -->
+        <div class="w-full md:w-2/3 p-12 md:p-20 flex flex-col md:flex-row items-center gap-12 bg-primary-container text-white relative">
+            <div class="w-48 h-48 rounded-full overflow-hidden border-4 border-secondary flex-shrink-0 shadow-2xl">
+                <img class="w-full h-full object-cover" data-alt="The Miller Family" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDi6aE4VPwganYtqCg8HHlAV4GiwgqQw38mK6804bChhFFXNbrRSq88Okz5akGF3qHkNH5wowVq5dzfGKTWe2ANP_PFqjeofmrSqnqiVDKpYuDMtaYAFbh0akUajSZpD6xkrPIOj4LmZuA3_mejclucSs-OsD1w4HRBzPfOmHCn1cja3M7y9nbGKKrsnkPKJJp3Hcz0zhHlF_r0JHDik0L5CWXW_qJn7dNPvuYujxEoFBLLd_ONZ_LkjgfjxJgN6MTNc5FXcxhcyPA"/>
+            </div>
+            <div>
+                <h3 class="text-3xl font-headline font-bold text-[#FDCA5D] mb-4 uppercase tracking-widest">Grown by The Millers</h3>
+                <p class="text-xl leading-relaxed opacity-90 italic font-body">
+                    "We've been cultivating these groves since 1974. We believe that soil health is the foundation of flavor."
+                </p>
+                <a href="about.html" class="inline-flex items-center gap-2 mt-8 text-secondary font-bold hover:gap-4 transition-all">
+                    Explore our farming story <span class="material-symbols-outlined">arrow_forward</span>
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Related Products -->
+    <section>
+        <div class="flex justify-between items-end mb-10">
+            <div>
+                <h2 class="text-3xl font-headline font-bold mb-2">Pairs Well With</h2>
+                <p class="text-on-surface-variant">Recommended based on seasonal availability.</p>
+            </div>
+            <a class="text-secondary font-bold hover:underline mb-1" href="shop.html">View All Fresh Produce</a>
+        </div>
+        <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6">
+            <!-- Related Item 1 -->
+            <div class="group cursor-pointer" onclick="location.reload()">
+                <div class="aspect-square rounded-xl overflow-hidden mb-4 bg-surface-container-low transition-transform duration-300 group-hover:-translate-y-1 shadow-sm">
+                    <img class="w-full h-full object-cover" data-alt="Vibrant heap of organic valencia oranges with soft leaves and bright citrus texture" src="https://lh3.googleusercontent.com/aida-public/AB6AXuAveEILz0XWM0cXi9ol5k2PkpLqOXW6yeUmw8heD1D80kVwssel1wv_C4NNES8rZp_oO8PrNw6Av5F-b0uCc4YlUiC62nuPkmx0XdLSx9WEDQwYs2nhizpynvaCsTGvvGTFD5I8lKlwYonpuial1b6Cujr5SVaaOYHCfL22FBNk0lsTXrMkb7vC3_onpVTG8ArYQwZclwgPrK_wKztGoSkqHf18xP_NjOkjJ5Fi4Z_d8svCHOZprvH0Ek-PNBwJwPsEKK1AZunDg8M"/>
+                </div>
+                <p class="text-xs font-label text-on-surface-variant uppercase tracking-widest mb-1">Citrus</p>
+                <h4 class="font-headline font-bold text-lg group-hover:text-secondary transition-colors">Valencia Oranges</h4>
+                <p class="text-secondary font-bold mt-1">$4.99 <span class="text-xs font-normal text-on-surface-variant">/ 3lb Bag</span></p>
+            </div>
+            <!-- Related Item 2 -->
+            <div class="group cursor-pointer" onclick="location.reload()">
+                <div class="aspect-square rounded-xl overflow-hidden mb-4 bg-surface-container-low transition-transform duration-300 group-hover:-translate-y-1 shadow-sm">
+                    <img class="w-full h-full object-cover" data-alt="Bunch of garden-fresh organic cilantro with water droplets on green leaves" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDTdJg0sTQdgYs7WsjDCfG_9XWUw872XSfz2TgtQPed-nTHkTwfOSs2-xWJa6SZMPe-oL5klL0tCGK3aC5WGLraxpB0cRn1ifsa-Irwb9hPuwr5qvVkox4lD5vLQFi3pH4M8fPbK58PzhsdfXPaB_DCNJmE7gBodCufFlNuasbzRVIsrgeXmWc38Syygn1noBrI-XGvERvb6H6UseYDjrT9gyiKLR2cdvyKbGVINl3-n6zugV9xOxxtgA49_zyF_ejfBfmf9iCgiQg"/>
+                </div>
+                <p class="text-xs font-label text-on-surface-variant uppercase tracking-widest mb-1">Herbs</p>
+                <h4 class="font-headline font-bold text-lg group-hover:text-secondary transition-colors">Organic Cilantro</h4>
+                <p class="text-secondary font-bold mt-1">$1.49 <span class="text-xs font-normal text-on-surface-variant">/ bunch</span></p>
+            </div>
+            <!-- Related Item 3 -->
+            <div class="group cursor-pointer" onclick="location.reload()">
+                <div class="aspect-square rounded-xl overflow-hidden mb-4 bg-surface-container-low transition-transform duration-300 group-hover:-translate-y-1 shadow-sm">
+                    <img class="w-full h-full object-cover" data-alt="Assorted heirloom tomatoes in deep reds, yellows, and purples on a rustic surface" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDaO_mxAYP8dnzqG6oKo1_Kmzv1bo07Rfd3gvQU9-OcJoXNboG3_mWJ0EIYky4tODwUZLn3Xrq7S0XfGgzuON5QMRq8QJhNdLUP-_kMUX9DOMQOjxBSIH3ndBv-5L34OyXaazbZHDbgpHWSLXc5Cn1qFQshLlpQtibMOqbZga-PmADsVkeEvMFsoAMGen5Ug7gAO5ogPPEDiwRfGKjuQ1IeTkGUpcG3GQIPyDNT5yUwjiuUutwNXH-Or7qhxuCxEsLVA1ZqkZQICYU"/>
+                </div>
+                <p class="text-xs font-label text-on-surface-variant uppercase tracking-widest mb-1">Vegetables</p>
+                <h4 class="font-headline font-bold text-lg group-hover:text-secondary transition-colors">Heirloom Tomatoes</h4>
+                <p class="text-secondary font-bold mt-1">$5.99 <span class="text-xs font-normal text-on-surface-variant">/ lb</span></p>
+            </div>
+            <!-- Related Item 4 -->
+            <div class="group cursor-pointer" onclick="location.reload()">
+                <div class="aspect-square rounded-xl overflow-hidden mb-4 bg-surface-container-low transition-transform duration-300 group-hover:-translate-y-1 shadow-sm">
+                    <img class="w-full h-full object-cover" data-alt="Artisan multi-grain sourdough bread loaf sliced on a linen cloth with crumbs" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBfh4Fcjk9ZdBoB8TaAHt-4qJCvBAPD0FB70in7rIoicyhtRPoxkiK_gfbPDNP90v-LRtivime6ggIVJpOHs9BNCv-wd8gU-uM9IwOo0Y-LnIKLcrUXLTGS_dCUGErZzX-Owcq_AzfzJ0UGjxm-z8NwMUYuZgMAxEMEv_MVrWZTSP9BRqhNWpj3xJfucoQsyb1OqYUyslQ8-2cYDT-HnUpmNnVrtu_MiV48KfwYa6GnuDBAhpwPaTBLQnIklDPL-uoPhRCshqMfyT4"/>
+                </div>
+                <p class="text-xs font-label text-on-surface-variant uppercase tracking-widest mb-1">Bakery</p>
+                <h4 class="font-headline font-bold text-lg group-hover:text-secondary transition-colors">Sourdough Loaf</h4>
+                <p class="text-secondary font-bold mt-1">$7.50 <span class="text-xs font-normal text-on-surface-variant">/ each</span></p>
+            </div>
+        </div>
+    </section>
+</main>
+
+<footer class="w-full py-20 px-12 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-5 gap-16 bg-[#0F1E38] dark:bg-[#000700] text-white">
+    <div class="space-y-8">
+        <div class="text-3xl font-headline text-[#FDCA5D] font-bold">Value Hub</div>
+        <p class="opacity-70 font-body text-sm leading-relaxed max-w-xs">
+            A digital-first sanctuary for soil sovereignty and authentic nutrition. Grown with care, delivered with intention.
+        </p>
+    </div>
+    
+    <div class="space-y-8">
+        <h5 class="text-xl font-headline font-bold text-[#FDCA5D]">Quick Links</h5>
+        <ul class="flex flex-col space-y-4 text-sm opacity-80 font-body">
+            <li><a class="hover:text-[#FDCA5D] transition-all" href="shop.html">The Marketplace</a></li>
+            <li><a class="hover:text-[#FDCA5D] transition-all" href="cafe.html">Botanical Cafe</a></li>
+            <li><a class="hover:text-[#FDCA5D] transition-all" href="locations.html">Our Locations</a></li>
+            <li><a class="hover:text-[#FDCA5D] transition-all" href="about.html">Methods & Values</a></li>
+            <li><a class="hover:text-[#FDCA5D] transition-all" href="careers.html">Careers</a></li>
+        </ul>
+    </div>
+
+    <div class="space-y-8">
+        <h5 class="text-xl font-headline font-bold text-[#FDCA5D]">Our Hubs</h5>
+        <ul class="flex flex-col space-y-4 text-sm opacity-80 font-body">
+            <li>
+                <p class="font-bold text-[#FDCA5D]">Australia</p>
+                <p class="text-xs opacity-70">22 Tikalara Street,<br/>Regency Park SA</p>
+            </li>
+            <li>
+                <p class="font-bold text-[#FDCA5D]">Canada</p>
+                <p class="text-xs opacity-70">3920 68 Avenue SE,<br/>Calgary, AB</p>
+            </li>
+        </ul>
+    </div>
+
+    <div class="space-y-8">
+        <h5 class="text-xl font-headline font-bold text-[#FDCA5D]">Support</h5>
+        <ul class="flex flex-col space-y-4 text-sm opacity-80 font-body">
+            <li><a class="hover:text-[#FDCA5D] transition-all" href="#">Privacy Policy</a></li>
+            <li><a class="hover:text-[#FDCA5D] transition-all" href="#">Terms & Conditions</a></li>
+            <li><a class="hover:text-[#FDCA5D] transition-all" href="contact.html">Contact Concierge</a></li>
+        </ul>
+    </div>
+
+    <div class="space-y-8">
+        <h5 class="text-xl font-headline font-bold text-[#FDCA5D]">Newsletter</h5>
+        <div class="flex flex-col gap-4">
+            <p class="text-sm opacity-70">Weekly insights into regenerative living.</p>
+            <div class="flex gap-2">
+                <input class="bg-white/10 border-none rounded-lg px-4 py-3 text-sm flex-1 outline-none focus:ring-1 focus:ring-[#FDCA5D]" placeholder="Email" type="email"/>
+                <button class="bg-[#FDCA5D] text-[#0F1E38] px-4 py-3 rounded-lg font-bold hover:brightness-110 active:scale-95 transition-all text-xs">Go</button>
+            </div>
+        </div>
+    </div>
+
+    <div class="lg:col-span-5 pt-12 border-t border-white/10 flex flex-col md:flex-row justify-between items-center gap-6 text-[10px] tracking-widest uppercase opacity-40 font-body">
+        <p>© <span id="year"></span> Value Hub. all right received</p>
+        <div class="flex gap-8">
+            <a href="#" class="hover:text-white transition-colors">Instagram</a>
+            <a href="#" class="hover:text-white transition-colors">Twitter</a>
+            <a href="#" class="hover:text-white transition-colors">LinkedIn</a>
+        </div>
+    </div>
+</footer>
+
+<script>
+    // Navigation Scroll Effect
+    const nav = document.getElementById('main-nav');
+    window.addEventListener('scroll', () => {
+        if (window.scrollY > 50) {
+            nav.classList.add('bg-white', 'shadow-md');
+        } else {
+            nav.classList.remove('bg-white', 'shadow-md');
+        }
+    });
+
+    // Mobile Menu Toggle
+    const menuToggle = document.getElementById('menu-toggle');
+    const menuClose = document.getElementById('menu-close');
+    const mobileMenu = document.getElementById('mobile-menu');
+
+    menuToggle?.addEventListener('click', () => {
+        mobileMenu.classList.remove('hidden');
+        document.body.style.overflow = 'hidden';
+    });
+
+    menuClose?.addEventListener('click', () => {
+        mobileMenu.classList.add('hidden');
+        document.body.style.overflow = 'auto';
+    });
+
+    // Dynamic Year
+    document.getElementById('year').textContent = new Date().getFullYear();
+
+    // Qty Selector
+    const qtyPlus = document.getElementById('qty-plus');
+    const qtyMinus = document.getElementById('qty-minus');
+    const qtyValue = document.getElementById('qty-value');
+    let currentQty = 1;
+
+    qtyPlus?.addEventListener('click', () => {
+        currentQty++;
+        qtyValue.textContent = currentQty;
+    });
+
+    qtyMinus?.addEventListener('click', () => {
+        if (currentQty > 1) {
+            currentQty--;
+            qtyValue.textContent = currentQty;
+        }
+    });
+</script>
+
+</body>
+</html>

@@ -1,0 +1,73 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 760 120" width="760" height="120" shape-rendering="geometricPrecision" text-rendering="geometricPrecision">
+  <defs>
+    <!-- Gold gradient for HUB text -->
+    <linearGradient id="gv3" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%"  style="stop-color:#C4972E"/>
+      <stop offset="50%" style="stop-color:#F0CE6A"/>
+      <stop offset="100%" style="stop-color:#C4972E"/>
+    </linearGradient>
+    <!-- Dedicated gold gradient for cart strokes (userSpace coords) -->
+    <linearGradient id="cartLine" x1="330" y1="0" x2="395" y2="0" gradientUnits="userSpaceOnUse">
+      <stop offset="0%"  style="stop-color:#C4972E"/>
+      <stop offset="45%" style="stop-color:#F2D06A"/>
+      <stop offset="100%" style="stop-color:#C4972E"/>
+    </linearGradient>
+    <style>
+      @import url('https://fonts.googleapis.com/css2?family=Outfit:wght@100;900&amp;display=swap');
+    </style>
+  </defs>
+
+  <!-- VALUE — massive, heavy, dark navy -->
+  <text
+    x="20"
+    y="88"
+    font-family="'Outfit', 'Helvetica Neue', Helvetica, Arial, sans-serif"
+    font-size="80"
+    font-weight="900"
+    letter-spacing="-2"
+    fill="#0F1E38"
+  >VALUE</text>
+
+  <!-- ─── LINE ART CART ICON centred at x=363, y=55 ─── -->
+  <g transform="translate(363, 55)"
+     fill="none"
+     stroke="url(#cartLine)"
+     stroke-linecap="round"
+     stroke-linejoin="round">
+
+    <!-- Handle: horizontal top bar -->
+    <line x1="-28" y1="-28" x2="14"  y2="-28" stroke-width="4.2"/>
+
+    <!-- Handle: vertical post (left drop) -->
+    <line x1="-28" y1="-28" x2="-28" y2="-6"  stroke-width="4.2"/>
+
+    <!-- Basket outline — trapezoidal, closed path -->
+    <path d="M -28,-6 H 24 L 19,20 H -22 Z" stroke-width="4.2"/>
+
+    <!-- Basket divider / shelf line — lighter weight for detail -->
+    <line x1="-23" y1="7" x2="21" y2="7" stroke-width="2" opacity="0.45"/>
+
+    <!-- Wheel left — open circle -->
+    <circle cx="-11" cy="28" r="6.5" stroke-width="4"/>
+
+    <!-- Wheel right — open circle -->
+    <circle cx="11"  cy="28" r="6.5" stroke-width="4"/>
+
+    <!-- Wheel centre dots — small filled discs for detail -->
+    <circle cx="-11" cy="28" r="1.8" fill="url(#cartLine)" stroke="none"/>
+    <circle cx="11"  cy="28" r="1.8" fill="url(#cartLine)" stroke="none"/>
+
+  </g>
+
+  <!-- HUB — ultra-thin, gold, wide tracking -->
+  <text
+    x="420"
+    y="88"
+    font-family="'Outfit', 'Helvetica Neue', Helvetica, Arial, sans-serif"
+    font-size="80"
+    font-weight="100"
+    letter-spacing="22"
+    fill="url(#gv3)"
+  >HUB</text>
+
+</svg>
