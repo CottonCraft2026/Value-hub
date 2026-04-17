@@ -144,7 +144,7 @@
     <section class="flex flex-col md:flex-row min-h-[70vh] items-center bg-surface-container-low px-8 md:px-20 py-12 md:py-24 gap-12">
         <div class="w-full md:w-1/2">
             <span class="text-secondary font-bold text-xs uppercase tracking-widest mb-4 block">Work With Us</span>
-            <h1 class="text-5xl md:text-8xl font-headline font-bold text-primary leading-none mb-8">Nurture Your <br/> <span class="italic text-secondary">Career.</span></h1>
+            <h1 class="text-4xl md:text-8xl font-headline font-bold text-primary leading-[1.1] md:leading-none mb-6">Nurture Your <br/> <span class="italic text-secondary">Career.</span></h1>
             <p class="text-xl text-on-surface-variant font-body leading-relaxed mb-10 max-w-lg">
                 At Value Hub, we're not just building a store; we're growing a community. Join our team of passionate individuals dedicated to soil sovereignty, authentic nutrition, and regenerative living.
             </p>
@@ -168,11 +168,48 @@
             <!-- Job cards will be injected here via JavaScript for better maintainability -->
         </div>
     </section>
+    <!-- Recruitment Partners Section -->
+    <section class="py-24 px-8 md:px-20 max-w-screen-2xl mx-auto border-t border-outline/10">
+        <div class="text-center mb-20">
+            <h2 class="text-3xl md:text-5xl font-headline font-bold text-primary mb-4 uppercase tracking-tight">Our Recruitment Partners</h2>
+            <p class="text-on-surface-variant font-body mb-8">We collaborate with regional workforce experts to ensure the growth of our regenerative community.</p>
+            <div class="w-20 h-1 bg-secondary/30 mx-auto rounded-full"></div>
+        </div>
+        <div class="grid grid-cols-2 md:grid-cols-4 lg:grid-cols-5 gap-12 items-center justify-items-center transition-all duration-700">
+            <img src="partners/MCT-Logo-Stack-scaled.jpg" alt="Partner Logo" class="h-12 w-auto object-contain max-w-[140px]">
+            <img src="partners/MemLogo_SL CARBON CAMPUS 4-C.jpg" alt="Partner Logo" class="h-12 w-auto object-contain max-w-[140px]">
+            <img src="partners/PACL-Logo.png" alt="Partner Logo" class="h-12 w-auto object-contain max-w-[140px]">
+            <img src="partners/Pennsylvania_Power_and_Light_logo.svg" alt="Partner Logo" class="h-12 w-auto object-contain max-w-[140px]">
+            <img src="partners/Pocono-Counties-Workforce-Development-Area.png" alt="Partner Logo" class="h-12 w-auto object-contain max-w-[140px]">
+            <img src="partners/cropped-GLOBAL-FULL-LOGO.png" alt="Partner Logo" class="h-10 w-auto object-contain max-w-[140px]">
+            <img src="partners/cropped-global-rec-sia.png" alt="Partner Logo" class="h-10 w-auto object-contain max-w-[140px]">
+            <img src="partners/cropped-Image1.png" alt="Partner Logo" class="h-10 w-auto object-contain max-w-[140px]">
+            <img src="partners/images (2).png" alt="Partner Logo" class="h-10 w-auto object-contain max-w-[140px]">
+            <img src="partners/images (3).png" alt="Partner Logo" class="h-10 w-auto object-contain max-w-[140px]">
+        </div>
+    </section>
+
+    <!-- Contact HR Section -->
+    <section class="py-16 px-8 md:px-20 max-w-screen-2xl mx-auto text-center mb-12">
+        <div class="bg-secondary/5 border-2 border-secondary/20 rounded-[2rem] md:rounded-[3rem] p-6 md:p-20 shadow-sm inline-block w-full">
+            <h2 class="text-4xl md:text-5xl font-headline font-bold text-primary mb-4 uppercase tracking-tight">Contact HR</h2>
+            <p class="text-lg font-body text-on-surface-variant mb-10 max-w-2xl mx-auto">
+                Don't see a role that fits? Send your CV to our talent team and start your journey with Value Hub.
+            </p>
+            <div class="inline-block bg-white px-5 md:px-10 py-6 rounded-3xl shadow-[0_10px_40px_rgba(121,89,0,0.1)] border border-secondary/10 group hover:scale-105 transition-all duration-300">
+                <span class="text-[10px] font-bold uppercase tracking-widest text-secondary block mb-2 opacity-60">Talent Acquisition</span>
+                <a href="mailto:hr@valuehubsupermarket.com" class="text-xs sm:text-xl md:text-4xl font-headline font-bold text-primary group-hover:text-secondary transition-colors inline-flex items-center gap-2 sm:gap-3">
+                    <span class="material-symbols-outlined text-secondary text-lg md:text-3xl shrink-0">mail</span>
+                    hr@valuehubsupermarket.com
+                </a>
+            </div>
+        </div>
+    </section>
 </main>
 
 <!-- Application Modal -->
-<div id="apply-modal" class="fixed inset-0 z-[100] flex items-center justify-center modal-overlay modal-hidden bg-black/60 backdrop-blur-sm p-4">
-    <div class="bg-white rounded-[2.5rem] w-full max-w-2xl max-h-[90vh] overflow-y-auto modal-content p-8 md:p-12 relative shadow-2xl">
+<div id="apply-modal" class="fixed inset-0 z-[100] flex items-center justify-center modal-overlay modal-hidden bg-black/60 backdrop-blur-sm p-2 md:p-4">
+    <div class="bg-white rounded-[2rem] md:rounded-[2.5rem] w-full max-w-2xl max-h-[95vh] overflow-y-auto modal-content p-6 md:p-12 relative shadow-2xl">
         <button class="absolute top-6 right-8 text-on-surface-variant hover:text-primary transition-colors" id="close-modal">
             <span class="material-symbols-outlined text-3xl">close</span>
         </button>
@@ -194,10 +231,7 @@
                     <input type="email" name="email" required class="w-full bg-surface-container-low border-none rounded-xl px-4 py-4 focus:ring-1 focus:ring-secondary font-body" placeholder="john@example.com"/>
                 </div>
             </div>
-            <div class="space-y-2">
-                <label class="text-xs font-bold uppercase tracking-widest text-secondary font-body">Phone Number</label>
-                <input type="tel" name="phone" required class="w-full bg-surface-container-low border-none rounded-xl px-4 py-4 focus:ring-1 focus:ring-secondary font-body" placeholder="+61 ..."/>
-            </div>
+
             <div class="space-y-2">
                 <label class="text-xs font-bold uppercase tracking-widest text-secondary font-body">Attach Resume (PDF)</label>
                 <div class="relative group">
@@ -240,11 +274,11 @@
         <ul class="flex flex-col space-y-4 text-sm opacity-80 font-body">
             <li>
                 <p class="font-bold text-[#FDCA5D]">Australia</p>
-                <p class="text-xs opacity-70">22 Tikalara Street,<br/>Regency Park SA</p>
+                <p class="text-xs opacity-70">22 Tikalara Street,<br/>Regency Park SA 5010</p>
             </li>
             <li>
                 <p class="font-bold text-[#FDCA5D]">Canada</p>
-                <p class="text-xs opacity-70">3920 68 Avenue SE,<br/>Calgary, AB</p>
+                <p class="text-xs opacity-70">3920 68 Avenue SE,<br/>Calgary, AB T2C 0E4</p>
             </li>
         </ul>
     </div>
